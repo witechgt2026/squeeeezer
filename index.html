@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAKE - Official Telegram Community</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cinzel:wght@800;900&family=Inter:ital,wght@0,400;0,600;0,800;0,900;1,400&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#E5B842',
+                        goldLight: '#FFF2AD',
+                        goldDark: '#9E7711',
+                        darkBg: '#05080E',
+                        telegramBlue: '#0088CC',
+                        telegramGlow: '#00A3FF'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        stake: ['Cinzel', 'serif'],
+                        script: ['Caveat', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #05080E;
+            background-image: 
+                radial-gradient(circle at 50% 18%, rgba(229, 184, 66, 0.18) 0%, transparent 45%),
+                radial-gradient(circle at 50% 85%, rgba(0, 136, 204, 0.12) 0%, transparent 50%),
+                linear-gradient(to bottom, rgba(5, 8, 14, 0.65) 0%, rgba(5, 8, 14, 0.92) 100%),
+                url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            color: #FFFFFF;
+        }
+
+        /* Metallic Gold Brushed Text Effect */
+        .gold-brushed-text {
+            background: linear-gradient(180deg, #FFFFFF 0%, #FFE27A 25%, #E5A93B 60%, #996E13 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0px 4px 15px rgba(229, 169, 59, 0.3));
+        }
+
+        /* Glowing Telegram CTA Pill */
+        .telegram-pill-btn {
+            background: rgba(8, 15, 26, 0.85);
+            border: 2px solid #00A3FF;
+            box-shadow: 0 0 25px rgba(0, 163, 255, 0.4), inset 0 0 15px rgba(0, 163, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .telegram-pill-btn:hover {
+            box-shadow: 0 0 45px rgba(0, 163, 255, 0.8), inset 0 0 25px rgba(0, 163, 255, 0.4);
+            transform: scale(1.03);
+            border-color: #33B5FF;
+        }
+
+        /* Custom Glass Card */
+        .glass-container {
+            background: rgba(8, 13, 22, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Feature divider borders */
+        .feature-border {
+            border-right: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        @media (max-width: 768px) {
+            .feature-border {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between items-center px-4 py-6 font-sans">
+
+    <!-- Top Brand Header -->
+    <header class="w-full max-w-5xl flex justify-between items-center mb-6 px-2">
+        <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-shield-halved text-gold text-lg"></i>
+            <span class="text-xs tracking-[0.25em] font-montserrat font-bold text-gray-300 uppercase">
+                Squeezer Productions
+            </span>
+        </div>
+
+        <div class="flex items-center space-x-3">
+            <span class="text-[11px] font-bold tracking-wider text-gray-400 hidden sm:inline">OFFICIAL CODE:</span>
+            <a href="https://stake.com/?c=VIPEXTREME" target="_blank" class="px-3.5 py-1.5 rounded-lg border border-gold/40 bg-gold/10 text-gold hover:bg-gold/20 text-xs font-mono font-bold tracking-wider transition">
+                VIPEXTREME
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Graphic Stage -->
+    <main class="w-full max-w-4xl glass-container rounded-3xl p-6 sm:p-10 relative overflow-hidden text-center my-auto">
+        
+        <!-- Subtle Crown Icon -->
+        <div class="flex justify-center mb-1">
+            <i class="fa-solid fa-crown text-gold text-3xl sm:text-4xl drop-shadow-[0_0_12px_rgba(229,184,66,0.6)]"></i>
+        </div>
+
+        <!-- Top SQUEEZER Header inside Graphic -->
+        <p class="font-montserrat font-black text-xs sm:text-sm tracking-[0.4em] text-white uppercase mb-2 opacity-90">
+            SQUEEZER PRODUCTIONS
+        </p>
+
+        <!-- Main Title & Side Tags Layout Grid -->
+        <div class="relative flex items-center justify-center my-2">
+            
+            <!-- Left Side Motto -->
+            <div class="hidden lg:block absolute left-0 text-left space-y-1 text-[10px] font-extrabold tracking-[0.25em] text-gray-400 uppercase leading-tight">
+                <p>HIGHER</p>
+                <p>FURTHER</p>
+                <p>BIGGER</p>
+            </div>
+
+            <!-- Center Gold STAKE Title -->
+            <div class="py-2">
+                <h1 class="font-montserrat font-black text-6xl sm:text-8xl lg:text-9xl tracking-tight gold-brushed-text leading-none uppercase">
+                    STAKE
+                </h1>
+                <p class="font-montserrat font-extrabold text-xs sm:text-base tracking-[0.3em] text-white uppercase mt-2">
+                    OFFICIAL TELEGRAM COMMUNITY
+                </p>
+            </div>
+
+            <!-- Right Side Motto -->
+            <div class="hidden lg:block absolute right-0 text-right space-y-1 text-[10px] font-extrabold tracking-[0.2em] text-gray-400 uppercase leading-tight italic">
+                <p>SAME</p>
+                <p>THRILL</p>
+                <p class="text-gold">DIFFERENT</p>
+                <p>GAME</p>
+            </div>
+        </div>
+
+        <!-- Mobile Side Mottos Bar -->
+        <div class="flex lg:hidden justify-between items-center text-[9px] font-bold tracking-widest text-gray-400 uppercase my-3 px-2 border-y border-white/10 py-1.5">
+            <span>HIGHER • FURTHER • BIGGER</span>
+            <span>SAME THRILL DIFFERENT GAME</span>
+        </div>
+
+        <!-- 5 Feature Columns (Matching Graphic Icons) -->
+        <div class="grid grid-cols-2 sm:grid-cols-5 my-8 border-y border-white/10 py-6 gap-y-6 sm:gap-y-0">
+            
+            <div class="feature-border px-2 flex flex-col items-center justify-center">
+                <i class="fa-solid fa-gift text-gold text-2xl mb-2"></i>
+                <span class="text-[11px] font-bold text-white tracking-wider uppercase">EXCLUSIVE<br>DROPS</span>
+            </div>
+
+            <div class="feature-border px-2 flex flex-col items-center justify-center">
+                <i class="fa-solid fa-coins text-gold text-2xl mb-2"></i>
+                <span class="text-[11px] font-bold text-white tracking-wider uppercase">GIVEAWAYS<br>& BONUSES</span>
+            </div>
+
+            <div class="feature-border px-2 flex flex-col items-center justify-center">
+                <i class="fa-solid fa-circle-play text-gold text-2xl mb-2"></i>
+                <span class="text-[11px] font-bold text-white tracking-wider uppercase">LIVE<br>STREAMS</span>
+            </div>
+
+            <div class="feature-border px-2 flex flex-col items-center justify-center">
+                <i class="fa-solid fa-comment-dots text-gold text-2xl mb-2"></i>
+                <span class="text-[11px] font-bold text-white tracking-wider uppercase">UPDATES<br>& NEWS</span>
+            </div>
+
+            <div class="px-2 flex flex-col items-center justify-center col-span-2 sm:col-span-1">
+                <i class="fa-solid fa-users text-gold text-2xl mb-2"></i>
+                <span class="text-[11px] font-bold text-white tracking-wider uppercase">COMMUNITY<br>CHAT</span>
+            </div>
+
+        </div>
+
+        <!-- Script Quote & Sub-Motto -->
+        <div class="my-6">
+            <h2 class="font-script text-4xl sm:text-5xl text-white font-bold leading-none mb-1 transform -rotate-1">
+                More Than a Game
+            </h2>
+            <div class="w-36 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mb-3"></div>
+            <p class="text-[11px] font-montserrat font-extrabold tracking-[0.35em] text-gray-300 uppercase">
+                DISCIPLINE • FREEDOM • OPPORTUNITY
+            </p>
+        </div>
+
+        <!-- Large Glowing Telegram CTA Button -->
+        <div class="mt-8 mb-4">
+            <a href="https://t.me/" target="_blank" class="telegram-pill-btn inline-flex items-center space-x-4 px-8 sm:px-12 py-3.5 sm:py-4 rounded-full text-white transition-all group">
+                
+                <!-- Telegram Icon in Blue Badge -->
+                <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-telegramBlue flex items-center justify-center shadow-lg group-hover:scale-110 transition">
+                    <i class="fa-brands fa-telegram text-white text-2xl sm:text-3xl"></i>
+                </div>
+
+                <!-- Text -->
+                <div class="text-left">
+                    <span class="font-montserrat font-black text-lg sm:text-2xl tracking-wider block leading-tight">JOIN NOW</span>
+                    <span class="text-[9px] sm:text-[10px] font-bold tracking-[0.25em] text-sky-200 uppercase block">ON TELEGRAM</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Interactive Account Linker for Giveaways -->
+        <div class="mt-10 pt-6 border-t border-white/10 max-w-md mx-auto">
+            <p class="text-xs font-bold text-gold tracking-widest uppercase mb-3">
+                <i class="fa-solid fa-trophy mr-1"></i> Stake Account Verification
+            </p>
+            <form onsubmit="registerUser(event)" class="flex gap-2">
+                <input type="text" id="stakeUsername" required placeholder="Enter Stake Username" class="flex-1 bg-black/60 border border-white/20 rounded-xl px-4 py-2.5 text-xs text-white placeholder-gray-500 outline-none focus:border-gold transition">
+                <button type="submit" class="bg-gold hover:bg-amber-400 text-black font-extrabold text-xs px-5 py-2.5 rounded-xl transition shadow-lg">
+                    VERIFY
+                </button>
+            </form>
+            <p id="verificationFeedback" class="hidden text-xs text-emerald-400 font-bold mt-2.5"></p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-6 text-center text-[10px] font-semibold text-gray-500 tracking-wider">
+        <p>© 2026 STAKE Official Community • Powered by Squeezer Productions</p>
+    </footer>
+
+    <script>
+        function registerUser(e) {
+            e.preventDefault();
+            const username = document.getElementById('stakeUsername').value;
+            const feedback = document.getElementById('verificationFeedback');
+            
+            feedback.innerText = `✅ Account "@${username}" linked! Make sure to join Telegram above to participate in drops.`;
+            feedback.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
